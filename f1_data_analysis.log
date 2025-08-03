@@ -1,0 +1,39 @@
+2025-08-03 23:40:12,568 - __main__ - INFO - Using existing dataset at data/raw
+2025-08-03 23:40:12,568 - __main__ - INFO - Loading F1 dataset files
+2025-08-03 23:40:12,569 - src.data.cleaning - INFO - Loading data from data/raw/sprint_results.csv
+2025-08-03 23:40:12,572 - src.data.cleaning - INFO - Successfully loaded sprint_results.csv with shape (360, 16)
+2025-08-03 23:40:12,573 - src.data.cleaning - INFO - Loading data from data/raw/drivers.csv
+2025-08-03 23:40:12,575 - src.data.cleaning - INFO - Successfully loaded drivers.csv with shape (861, 9)
+2025-08-03 23:40:12,575 - src.data.cleaning - INFO - Loading data from data/raw/races.csv
+2025-08-03 23:40:12,577 - src.data.cleaning - INFO - Successfully loaded races.csv with shape (1125, 18)
+2025-08-03 23:40:12,577 - __main__ - INFO - Validating data
+2025-08-03 23:40:12,577 - src.data.validation - INFO - Validating Sprint Results
+2025-08-03 23:40:12,580 - src.data.validation - INFO - Sprint Results validation passed
+2025-08-03 23:40:12,580 - src.data.validation - INFO - Validating Drivers
+2025-08-03 23:40:12,581 - src.data.validation - INFO - Drivers validation passed
+2025-08-03 23:40:12,581 - src.data.validation - INFO - Validating Races
+2025-08-03 23:40:12,581 - src.data.validation - INFO - Races validation passed
+2025-08-03 23:40:12,581 - __main__ - INFO - Cleaning data
+2025-08-03 23:40:12,581 - src.data.cleaning - INFO - Cleaning sprint results data
+2025-08-03 23:40:12,585 - src.data.cleaning - INFO - Removed 15 rows with missing position values
+2025-08-03 23:40:12,585 - src.data.cleaning - INFO - Cleaned sprint results shape: (345, 16)
+2025-08-03 23:40:12,585 - src.data.cleaning - INFO - Cleaning drivers data
+2025-08-03 23:40:12,593 - src.data.cleaning - INFO - Cleaned drivers data shape: (861, 10)
+2025-08-03 23:40:12,593 - src.data.cleaning - INFO - Cleaning races data
+2025-08-03 23:40:12,596 - src.data.cleaning - INFO - Cleaned races data shape: (1125, 18)
+2025-08-03 23:40:12,596 - __main__ - INFO - Performing feature engineering
+2025-08-03 23:40:12,596 - src.features.feature_engineering - INFO - Identifying sprint race winners
+2025-08-03 23:40:12,596 - src.features.feature_engineering - INFO - Found 18 sprint race winners
+2025-08-03 23:40:12,596 - src.features.feature_engineering - INFO - Merging sprint winners with race and driver information
+2025-08-03 23:40:12,600 - src.features.feature_engineering - INFO - Merged data shape: (18, 21)
+2025-08-03 23:40:12,600 - src.features.feature_engineering - INFO - Calculating sprint wins per driver
+2025-08-03 23:40:12,602 - src.features.feature_engineering - INFO - Calculated sprint wins for 6 drivers
+2025-08-03 23:40:12,602 - src.features.feature_engineering - INFO - Enriching sprint wins data with additional features
+2025-08-03 23:40:12,604 - src.features.feature_engineering - INFO - Enriched sprint wins data with 1 additional features
+2025-08-03 23:40:12,605 - __main__ - INFO - Saved processed data to data/processed/sprint_wins.csv
+2025-08-03 23:40:12,605 - __main__ - INFO - Creating visualizations
+2025-08-03 23:40:12,605 - src.visualization.plots - INFO - Creating sprint wins bar plot
+2025-08-03 23:40:12,931 - src.visualization.plots - INFO - Saved plot to data/processed/sprint_wins_by_driver.png
+2025-08-03 23:40:12,931 - src.visualization.plots - INFO - Creating sprint wins by year plot
+2025-08-03 23:40:13,151 - src.visualization.plots - INFO - Saved plot to data/processed/sprint_races_by_year.png
+2025-08-03 23:40:13,154 - __main__ - INFO - Analysis completed successfully
