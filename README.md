@@ -15,7 +15,7 @@ The project follows a modular structure with separate components for data proces
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone git@github.com:jonatasemidio/f1-data-analysis.git
 cd f1-data-analysis
 
 # Create and activate a virtual environment (optional but recommended)
